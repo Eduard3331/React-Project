@@ -1,5 +1,5 @@
 import { it, expect, describe, vi, beforeEach } from 'vitest'
-import { logDOM, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Product } from './Product'
 import axios from 'axios';
 import userEvent from '@testing-library/user-event';
