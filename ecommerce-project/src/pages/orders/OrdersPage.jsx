@@ -9,7 +9,7 @@ import BuyAgainIcon from '../../assets/images/icons/buy-again.png';
 import { OrdersGrid } from './OrdersGrid';
 
 
-export function OrdersPage({ cart }) {
+export function OrdersPage({ cart, loadCart }) {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
@@ -31,7 +31,7 @@ export function OrdersPage({ cart }) {
             <div className="orders-page">
                 <div className="page-title">Your Orders</div>
 
-                <OrdersGrid orders={orders} />
+                <OrdersGrid orders={orders} loadCart={loadCart} />
             </div>
         </>
     );
